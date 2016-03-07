@@ -9,7 +9,7 @@ https://github.com/boot-clj/boot/wiki/For-Cursive-Users
 ## Usage
 
 ````clj
-(set-env! :dependencies '[[zhuangxm/boot-lein "0.0.1" :scope "test"]])
+(set-env! :dependencies '[[zhuangxm/boot-lein "0.1.0" :scope "test"]])
 
 (require '[zhuangxm.boot-lein :refer [lein]])
 
