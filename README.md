@@ -9,7 +9,7 @@ https://github.com/boot-clj/boot/wiki/For-Cursive-Users
 ## Usage
 
 ````clj
-(set-env! :dependencies '[[zhuangxm/boot-lein "0.1.0" :scope "test"]])
+(set-env! :dependencies '[[zhuangxm/boot-lein "0.1.1" :scope "test"]])
 
 (require '[zhuangxm.boot-lein :refer [lein]])
 
@@ -20,6 +20,11 @@ using command below to generate project.clj
 ```bash
 boot lein
 ```
+
+## relase history
+
+* 0.1.1  using boot to deploy, change clojure and boot dependency to provided.
+* 0.1.0  first version
 
 ## License
 

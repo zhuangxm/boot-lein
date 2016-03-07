@@ -1,11 +1,11 @@
 (set-env!
   :resource-paths #{"src"}
-  :dependencies '[[org.clojure/clojure "1.6.0"     :scope "provided"]
+  :dependencies '[[org.clojure/clojure "1.7.0"     :scope "provided"]
                   [boot/core           "2.5.5"     :scope "provided"]])
 
 (task-options!
   pom {:project     'zhuangxm/boot-lein
-       :version     "0.1.0"
+       :version     "0.1.1"
        :description "Boot task to generate project.clj file."
        :url         "https://github.com/zhuangxm/boot-lein"
        :scm         {:url "https://github.com/zhuangxm/boot-lein"}
