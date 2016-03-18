@@ -9,7 +9,7 @@ https://github.com/boot-clj/boot/wiki/For-Cursive-Users
 ## Usage
 
 ````clj
-(set-env! :dependencies '[[zhuangxm/boot-lein "0.1.1" :scope "test"]])
+(set-env! :dependencies '[[zhuangxm/boot-lein "0.1.2" :scope "test"]])
 
 (require '[zhuangxm.boot-lein :refer [lein]])
 
@@ -23,6 +23,7 @@ boot lein
 
 ## relase history
 
+* 0.1.2  adding clojure 1.8.0 as dependency if necessary
 * 0.1.1  using boot to deploy, change clojure and boot dependency to provided.
 * 0.1.0  first version
 

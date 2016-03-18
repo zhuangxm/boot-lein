@@ -5,6 +5,13 @@
 ;;original code copy from https://github.com/boot-clj/boot/wiki/For-Cursive-Users
 ;;add repositroies part
 
+(defn add-clojure-as-dependency
+  "if clojure isn't appeared in dependencies, add clojure 1.8.0"
+  [deps]
+  (if-not (some #(= % 'org.clojure/clojure) deps)
+    (cons ['org.clojure/clojure "1.8.0"] deps)
+    deps))
+
 (defn- generate-lein-project-file! [& {:keys [keep-project] :or {:keep-project true}}]
   (require 'clojure.java.io)
   (let [pfile ((resolve 'clojure.java.io/file) "project.clj")
@@ -19,7 +26,7 @@
                       [:url url]
                       [:description description]
                       (prop :license :license)
-                      [:dependencies (get-env :dependencies)
+                      [:dependencies (add-clojure-as-dependency (get-env :dependencies))
                        :source-paths (vec (concat (get-env :source-paths)
                                                   (get-env :resource-paths)))
                        :repositories (symbol "^:replace")
