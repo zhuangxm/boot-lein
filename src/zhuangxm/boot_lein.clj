@@ -8,7 +8,7 @@
 (defn add-clojure-as-dependency
   "if clojure isn't appeared in dependencies, add clojure 1.8.0"
   [deps]
-  (if-not (some #(= % 'org.clojure/clojure) deps)
+  (if-not (some #(= (first %) 'org.clojure/clojure) deps)
     (cons ['org.clojure/clojure "1.8.0"] deps)
     deps))
 
