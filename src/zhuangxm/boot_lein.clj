@@ -29,8 +29,7 @@
                       [:dependencies (add-clojure-as-dependency (get-env :dependencies))
                        :source-paths (vec (concat (get-env :source-paths)
                                                   (get-env :resource-paths)))
-                       :repositories (symbol "^:replace")
-                       (vec repos)]))
+                       :repositories (vec repos)]))
         proj (boot.util/pp-str head)]
     (if-not keep-project (.deleteOnExit pfile))
     (spit pfile proj)))

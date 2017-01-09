@@ -5,12 +5,15 @@
 
 (task-options!
   pom {:project     'zhuangxm/boot-lein
-       :version     "0.1.2"
+       :version     "0.1.3"
        :description "Boot task to generate project.clj file."
        :url         "https://github.com/zhuangxm/boot-lein"
        :scm         {:url "https://github.com/zhuangxm/boot-lein"}
        :license     {"Eclipse Public License"
                      "http://www.eclipse.org/legal/epl-v10.html"}})
+
+(set-env! :repositories [["clojars" {:url "https://clojars.org/repo/"
+                                     :name "clojars"}]])
 
 (deftask build []
          (comp
