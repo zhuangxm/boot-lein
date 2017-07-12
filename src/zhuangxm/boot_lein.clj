@@ -12,7 +12,8 @@
     (cons ['org.clojure/clojure "1.8.0"] deps)
     deps))
 
-(defn- generate-lein-project-file! [& {:keys [keep-project] :or {:keep-project true}}]
+(defn- generate-lein-project-file! 
+  [& {:keys [keep-project] :or {keep-project true}}]
   (require 'clojure.java.io)
   (let [pfile ((resolve 'clojure.java.io/file) "project.clj")
         ; Only works when pom options are set using task-options!
