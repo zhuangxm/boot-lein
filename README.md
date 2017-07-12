@@ -21,7 +21,7 @@ using command below to generate project.clj
 boot lein
 ```
 
-## relase history
+## release history
 
 * 0.1.4  solve keep-project default value config error.
 * 0.1.3  removing replace symbol in repositories.
