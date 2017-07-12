@@ -5,7 +5,7 @@
 
 (task-options!
   pom {:project     'zhuangxm/boot-lein
-       :version     "0.1.3"
+       :version     "0.1.4"
        :description "Boot task to generate project.clj file."
        :url         "https://github.com/zhuangxm/boot-lein"
        :scm         {:url "https://github.com/zhuangxm/boot-lein"}

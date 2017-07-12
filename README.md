@@ -23,6 +23,7 @@ boot lein
 
 ## relase history
 
+* 0.1.4  solve keep-project default value config error.
 * 0.1.3  removing replace symbol in repositories.
 * 0.1.2  adding clojure 1.8.0 as dependency if necessary
 * 0.1.1  using boot to deploy, change clojure and boot dependency to provided.
